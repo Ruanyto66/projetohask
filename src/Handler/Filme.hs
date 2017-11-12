@@ -15,5 +15,13 @@ postFilmeR = do
     filmeid <- runDB $ insert filme
     sendStatusJSON created201 (object ["resp" .= (fromSqlKey filmeid)])
 
+getConsultaFilmeR :: FilmeId -> Handler Value
+getConsultaFilmeR filmeid = do
+    filme <- runDB $ get404 filmeid
+    sendStatusJSON ok200 (object ["resp" .= toJSON filme])
 
-    
+getTodosFilmesR :: Handler Value
+getTodosFilmesR = do
+    filmes <- runDB $ selectList [] [Asc FilmeNome]
+    sendStatusJSON ok200 (object ["resp" .= toJSON filmes])
+
