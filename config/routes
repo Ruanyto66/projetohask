@@ -1,0 +1,19 @@
+/static StaticR Static appStatic
+
+
+/ HomeR GET 
+
+/cinema                                              CinemaR                  POST
+/cinema/#CinemaId                                    ConsultaCinemaR          GET
+/cinema/consulta/todos                               TodosCinemasR            GET
+/cinema/#CinemaId/apagar                             ApagarCinemaR            DELETE
+/cinema/#CinemaId/alterar                            AlterarCinemaR           PUT
+/cinema/#CinemaId/alterar/#Text/nome                 AlterarNomeR             PATCH
+/cinema/#CinemaId/alterar/#UTCTime/horario           AlterarHorarioR          PATCH
+/cinema/#CinemaId/alterar/#Text/descricao            AlterarDescricaoR        PATCH
+/cinema/#CinemaId/alterar/#Int/tel                   AlterarTelR              PATCH
+/cinema/#CinemaId/Alterar/#Text/endereco             AlterarEnderecoR         PATCH
+
+
+
+
