@@ -31,6 +31,18 @@
 /filme/#FilmeId/alterar/#Int/classificacao           AlterarFiClassificacaoR  PATCH
 
 
+/teatro                                              TeatroR                  POST
+/teatro/#TeatroId                                    ConsultaTeatroR          GET
+/teatro/consulta/todos                               TodosTeatrosR            GET
+/teatro/#TeatroId/apagar                             ApagarTeatroR            DELETE
+/teatro/#TeatroId/alterar                            AlterarTeatroR           PUT
+/teatro/#TeatroId/alterar/#Text/nome                 AlterarTeNomeR           PATCH
+/teatro/#TeatroId/alterar/#UTCTime/horario           AlterarTeHorarioR        PATCH
+/teatro/#TeatroId/alterar/#Text/descricao            AlterarTeDescricaoR      PATCH
+/teatro/#TeatroId/alterar/#Int/tel                   AlterarTeTelR            PATCH
+/teatro/#TeatroId/alterar/#Text/endereco             AlterarTeEnderecoR       PATCH
+
+
          
 
 
