@@ -43,6 +43,25 @@
 /teatro/#TeatroId/alterar/#Text/endereco             AlterarTeEnderecoR       PATCH
 
 
+/peca                                                PecaR                    POST
+/peca/#PecaId                                        ConsultaPecaR            GET
+/peca/consulta/todos                                 TodasPecasR              GET
+/peca/#PecaId/apagar                                 ApagarPecaR              DELETE
+/peca/#PecaId/alterar                                AlterarPecaR             PUT
+/peca/#PecaId/alterar/#UTCTime/dtPeca                AlterarDtPecaR           PATCH
+/peca/#PecaId/alterar/#Text/nome                     AlterarPeNomeR           PATCH
+/peca/#PecaId/alterar/#Text/sinopse                  AlterarPeSinopseR        PATCH
+/peca/#PecaId/alterar/#UTCTime/horario               AlterarPeHorarioR        PATCH
+/peca/#PecaId/alterar/#Double/preco                  AlterarPePrecoR          PATCH
+/peca/#PecaId/alterar/#Text/tipoPeca                 AlterarPeTipoPecaR       PATCH
+/peca/#PecaId/alterar/#Text/genero                   AlterarPeGeneroR         PATCH
+/peca/#PecaId/alterar/#Int/classificacao             AlterarPeClassificacao   PATCH
+
+
+
+
+
+
          
 
 
