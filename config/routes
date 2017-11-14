@@ -8,11 +8,30 @@
 /cinema/consulta/todos                               TodosCinemasR            GET
 /cinema/#CinemaId/apagar                             ApagarCinemaR            DELETE
 /cinema/#CinemaId/alterar                            AlterarCinemaR           PUT
-/cinema/#CinemaId/alterar/#Text/nome                 AlterarNomeR             PATCH
-/cinema/#CinemaId/alterar/#UTCTime/horario           AlterarHorarioR          PATCH
-/cinema/#CinemaId/alterar/#Text/descricao            AlterarDescricaoR        PATCH
-/cinema/#CinemaId/alterar/#Int/tel                   AlterarTelR              PATCH
-/cinema/#CinemaId/Alterar/#Text/endereco             AlterarEnderecoR         PATCH
+/cinema/#CinemaId/alterar/#Text/nome                 AlterarCiNomeR           PATCH
+/cinema/#CinemaId/alterar/#UTCTime/horario           AlterarCiHorarioR        PATCH
+/cinema/#CinemaId/alterar/#Text/descricao            AlterarCiDescricaoR      PATCH
+/cinema/#CinemaId/alterar/#Int/tel                   AlterarCiTelR            PATCH
+/cinema/#CinemaId/alterar/#Text/endereco             AlterarCiEnderecoR       PATCH
+
+
+
+/filme                                               FilmeR                   POST
+/filme/#FilmeId                                      ConsultaFilmeR           GET
+/filme/consulta/todos                                TodosFilmesR             GET
+/filme/#FilmeId/apagar                               ApagarFilmeR             DELETE
+/filme/#FilmeId/alterar                              AlterarFilmeR            PUT
+/filme/#FilmeId/alterar/#Text/nome                   AlterarFiNomeR           PATCH
+/filme/#FilmeId/alterar/#Text/sinopse                AlterarFiSinopseR        PATCH
+/filme/#FilmeId/alterar/#UTCTime/horario             AlterarFiHorarioR        PATCH
+/filme/#FilmeId/alterar/#Double/preco                AlterarFiPrecoR          PATCH
+/filme/#FilmeId/alterar/#Text/tipoFilme              AlterarTipoFilmeR        PATCH
+/filme/#FilmeId/alterar/#Text/audioFilme             AlterarAudioFilmeR       PATCH
+/filme/#FilmeId/alterar/#Text/genero                 AlterarFiGeneroR         PATCH
+/filme/#FilmeId/alterar/#Int/classificacao           AlterarFiClassificacaoR  PATCH
+
+
+         
 
 
 
