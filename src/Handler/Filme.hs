@@ -37,24 +37,24 @@ putAlterarFilmeR filmeid = do
     runDB $ replace filmeid novoFilme
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
-patchAlterarNomeFR :: FilmeId -> Text -> Handler Value
-patchAlterarNomeFR filmeid nome = do
+patchAlterarFiNomeR :: FilmeId -> Text -> Handler Value
+patchAlterarFiNomeR filmeid nome = do
     _ <- runDB $ update filmeid [FilmeNome =. nome]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
 
-patchAlterarSinopseR :: FilmeId -> Text -> Handler Value
-patchAlterarSinopseR filmeid sinopse = do
+patchAlterarFiSinopseR :: FilmeId -> Text -> Handler Value
+patchAlterarFiSinopseR filmeid sinopse = do
     _ <- runDB $ update filmeid [FilmeSinopse =. sinopse]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
     
-patchAlterarHorarioFR :: FilmeId -> UTCTime -> Handler Value
-patchAlterarHorarioFR filmeid horario = do
+patchAlterarFiHorarioR :: FilmeId -> UTCTime -> Handler Value
+patchAlterarFiHorarioR filmeid horario = do
     _ <- runDB $ update filmeid [FilmeHorario =. horario]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
-patchAlterarPrecoFR :: FilmeId -> Double -> Handler Value
-patchAlterarPrecoFR filmeid preco = do
+patchAlterarFiPrecoR :: FilmeId -> Double -> Handler Value
+patchAlterarFiPrecoR filmeid preco = do
     _ <-runDB $ update filmeid [FilmePreco =. preco]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
@@ -68,13 +68,13 @@ patchAlterarAudioFilmeR filmeid audioFilme = do
     _ <- runDB $ update filmeid [FilmeAudioFilme =. audioFilme]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
-patchAlterarGeneroR :: FilmeId -> Text -> Handler Value
-patchAlterarGeneroR filmeid genero = do
+patchAlterarFiGeneroR :: FilmeId -> Text -> Handler Value
+patchAlterarFiGeneroR filmeid genero = do
     _ <- runDB $ update filmeid [FilmeGenero =. genero]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
-patchAlterarClassificacaoR :: FilmeId -> Int -> Handler Value
-patchAlterarClassificacaoR filmeid classificacao = do
+patchAlterarFiClassificacaoR :: FilmeId -> Int -> Handler Value
+patchAlterarFiClassificacaoR filmeid classificacao = do
     _ <- runDB $ update filmeid [FilmeClassificacao =. classificacao]
     sendStatusJSON noContent204 (object ["resp" .= toJSON filmeid])
 
