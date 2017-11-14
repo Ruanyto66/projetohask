@@ -43,27 +43,35 @@ putAlterarCinemaR cinemaid = do
     runDB $ replace cinemaid novoCinema
     sendStatusJSON noContent204 (object ["resp" .= toJSON cinemaid])
     
-patchAlterarNomeR :: CinemaId -> Text -> Handler Value
-patchAlterarNomeR cinemaid nome = do
+patchAlterarCiNomeR :: CinemaId -> Text -> Handler Value
+patchAlterarCiNomeR cinemaid nome = do
     _ <- runDB $ update cinemaid [CinemaNome =. nome]
     sendStatusJSON noContent204 (object ["resp" .= toJSON cinemaid])
 
-patchAlterarHorarioR :: CinemaId ->  UTCTime -> Handler Value
-patchAlterarHorarioR cinemaid horario = do
+patchAlterarCiHorarioR :: CinemaId ->  UTCTime -> Handler Value
+patchAlterarCiHorarioR cinemaid horario = do
     _ <- runDB $ update cinemaid [CinemaHorario =. horario]
     sendStatusJSON noContent204 (object ["resp" .= toJSON cinemaid])
 
-patchAlterarDescricaoR :: CinemaId -> Text -> Handler Value
-patchAlterarDescricaoR cinemaid descricao = do
+patchAlterarCiDescricaoR :: CinemaId -> Text -> Handler Value
+patchAlterarCiDescricaoR cinemaid descricao = do
     _ <- runDB $ update cinemaid [CinemaDescricao =. descricao]
     sendStatusJSON noContent204 (object ["resp" .= toJSON cinemaid])
 
-patchAlterarTelR :: CinemaId -> Int -> Handler Value
-patchAlterarTelR cinemaid tel = do
+patchAlterarCiTelR :: CinemaId -> Int -> Handler Value
+patchAlterarCiTelR cinemaid tel = do
     _ <- runDB $ update cinemaid [CinemaTel =. tel]
     sendStatusJSON noContent204 (object ["resp" .= toJSON cinemaid])
 
-patchAlterarEnderecoR :: CinemaId -> Text -> Handler Value
-patchAlterarEnderecoR cinemaid endereco = do
+patchAlterarCiEnderecoR :: CinemaId -> Text -> Handler Value
+patchAlterarCiEnderecoR cinemaid endereco = do
     _ <- runDB $ update cinemaid [CinemaEndereco =. endereco]
     sendStatusJSON noContent204 (object ["resp" .= toJSON cinemaid])
+
+
+
+
+
+
+
+
