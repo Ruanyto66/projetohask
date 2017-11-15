@@ -58,7 +58,15 @@
 /peca/#PecaId/alterar/#Int/classificacao             AlterarPeClassificacao   PATCH
 
 
-
+/localExpo                                           LocalExpoR               POST
+/localExpo/#LocalExpoId                              ConsultaLocalExpoR       GET
+/localExpo/consulta/todos                            TodosLocaisExpoR         GET
+/localExpo/#LocalExpoId/apagar                       ApagarLocalExpoR         DELETE
+/localExpo/#LocalExpoId/alterar                      AlterarLocalExpoR        PUT
+/localExpo/#LocalExpoId/alterar/#Text/nome           AlterarLsNomeR           PATCH
+/localExpo/#LocalExpoId/alterar/#UTCTime/horario     AlterarLsHorarioR        PATCH
+/localExpo/#LocalExpoId/alterar/#Int/tel             AlterarLsTelR            PATCH
+/localExpo/#LocalExpoId/alterar/#Text/endereco       AlterarLsEnderecoR       PATCH
 
 
 
