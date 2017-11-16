@@ -91,7 +91,7 @@
 /eventoEspecial/#EventoEspecialId/alterar                               AlterarEventoEspecialR     PUT
 /eventoEspecial/#EventoEspecialId/alterar/#UTCTime/dtEventoEspecial     AlterarDtEventoEspecialR   PATCH
 /eventoEspecial/#EventoEspecialId/alterar/#Text/nmEvento                AlterarNomeEventoR         PATCH
-/eventoEspecial/#EventoEspecialId/alterar/#Text/nmArtista               AlterarNomeArtistaR        PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/nmArtista               AlterarEeNomeArtistaR      PATCH
 /eventoEspecial/#EventoEspecialId/alterar/#Text/nmGrupo                 AlterarNomeGrupoR          PATCH
 /eventoEspecial/#EventoEspecialId/alterar/#Text/nmLocal                 AlterarNomeLocalR          PATCH
 /eventoEspecial/#EventoEspecialId/alterar/#UTCTime/horario              AlterarEeHorarioR          PATCH
@@ -102,7 +102,31 @@
 /eventoEspecial/#EventoEspecialId/alterar/#Int/classificacao            AlterarEeClassificacaoR    PATCH
 
 
+/localSh                                                                LocalShR                   POST
+/localSh/#LocalShId                                                     ConsultaLocalShR           GET
+/localSh/consulta/todos                                                 TodosLocaisShR             GET
+/localSh/#LocalShId/apagar                                              ApagarLocalShR             DELETE
+/localSh/#LocalShId/alterar                                             AlterarLocalShR            PUT
+/localSh/#LocalShId/alterar/#Text/nome                                  AlterarShNomeR             PATCH
+/localSh/#LocalShId/alterar/#UTCTime/horario                            AlterarShHorarioR          PATCH
+/localSh/#LocalShId/alterar/#Text/descricao                             AlterarShDescricaoR        PATCH
+/localSh/#LocalShId/alterar/#Int/tel                                    AlterarShTelR              PATCH
+/localSh/#LocalShId/alterar/#Text/endereco                              AlterarShEnderecoR         PATCH
 
+/sho                                                                    ShoR                       POST
+/sho/#ShoId                                                             ConsultaShoR               GET
+/sho/consulta/todos                                                     TodosShosR                 GET
+/sho/#ShoId/apagar                                                      ApagarShoR                 DELETE
+/sho/#ShoId/alterar                                                     AlterarShoR                PUT
+/sho/#ShoId/alterar/#UTCTime/dtSho                                      AlterarDtShoR              PATCH
+/sho/#ShoId/alterar/#Text/nome                                          AlterarShoNomeR            PATCH
+/sho/#ShoId/alterar/#UTCTime/horario                                    AlterarShoHorarioR         PATCH
+/sho/#ShoId/alterar/#Text/descricao                                     AlterarShoDescricaoR       PATCH
+/sho/#ShoId/alterar/#Double/preco                                       AlterarShoPrecoR           PATCH
+/sho/#ShoId/alterar/#Text/nmArtista                                     AlterarShoNomeArtistaR     PATCH
+/sho/#ShoId/alterar/#Text/nmBanda                                       AlterarShoNomeBandaR       PATCH
+/sho/#ShoId/alterar/#Text/endereco                                      AlterarShoEnderecoR        PATCH
+/sho/#ShoId/alterar/#Int/classificacao                                  AlterarShoClassificacaoR   PATCH
 
 
 
