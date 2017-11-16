@@ -3,89 +3,105 @@
 
 / HomeR GET 
 
-/cinema                                                CinemaR                  POST
-/cinema/#CinemaId                                      ConsultaCinemaR          GET
-/cinema/consulta/todos                                 TodosCinemasR            GET
-/cinema/#CinemaId/apagar                               ApagarCinemaR            DELETE
-/cinema/#CinemaId/alterar                              AlterarCinemaR           PUT
-/cinema/#CinemaId/alterar/#Text/nome                   AlterarCiNomeR           PATCH
-/cinema/#CinemaId/alterar/#UTCTime/horario             AlterarCiHorarioR        PATCH
-/cinema/#CinemaId/alterar/#Text/descricao              AlterarCiDescricaoR      PATCH
-/cinema/#CinemaId/alterar/#Int/tel                     AlterarCiTelR            PATCH
-/cinema/#CinemaId/alterar/#Text/endereco               AlterarCiEnderecoR       PATCH
+/cinema                                                                 CinemaR                    POST
+/cinema/#CinemaId                                                       ConsultaCinemaR            GET
+/cinema/consulta/todos                                                  TodosCinemasR              GET
+/cinema/#CinemaId/apagar                                                ApagarCinemaR              DELETE
+/cinema/#CinemaId/alterar                                               AlterarCinemaR             PUT
+/cinema/#CinemaId/alterar/#Text/nome                                    AlterarCiNomeR             PATCH
+/cinema/#CinemaId/alterar/#UTCTime/horario                              AlterarCiHorarioR          PATCH
+/cinema/#CinemaId/alterar/#Text/descricao                               AlterarCiDescricaoR        PATCH
+/cinema/#CinemaId/alterar/#Int/tel                                      AlterarCiTelR              PATCH
+/cinema/#CinemaId/alterar/#Text/endereco                                AlterarCiEnderecoR         PATCH
 
 
 
-/filme                                                 FilmeR                   POST
-/filme/#FilmeId                                        ConsultaFilmeR           GET
-/filme/consulta/todos                                  TodosFilmesR             GET
-/filme/#FilmeId/apagar                                 ApagarFilmeR             DELETE
-/filme/#FilmeId/alterar                                AlterarFilmeR            PUT
-/filme/#FilmeId/alterar/#Text/nome                     AlterarFiNomeR           PATCH
-/filme/#FilmeId/alterar/#Text/sinopse                  AlterarFiSinopseR        PATCH
-/filme/#FilmeId/alterar/#UTCTime/horario               AlterarFiHorarioR        PATCH
-/filme/#FilmeId/alterar/#Double/preco                  AlterarFiPrecoR          PATCH
-/filme/#FilmeId/alterar/#Text/tipoFilme                AlterarTipoFilmeR        PATCH
-/filme/#FilmeId/alterar/#Text/audioFilme               AlterarAudioFilmeR       PATCH
-/filme/#FilmeId/alterar/#Text/genero                   AlterarFiGeneroR         PATCH
-/filme/#FilmeId/alterar/#Int/classificacao             AlterarFiClassificacaoR  PATCH
+/filme                                                                  FilmeR                     POST
+/filme/#FilmeId                                                         ConsultaFilmeR             GET
+/filme/consulta/todos                                                   TodosFilmesR               GET
+/filme/#FilmeId/apagar                                                  ApagarFilmeR               DELETE
+/filme/#FilmeId/alterar                                                 AlterarFilmeR              PUT
+/filme/#FilmeId/alterar/#Text/nome                                      AlterarFiNomeR             PATCH
+/filme/#FilmeId/alterar/#Text/sinopse                                   AlterarFiSinopseR          PATCH
+/filme/#FilmeId/alterar/#UTCTime/horario                                AlterarFiHorarioR          PATCH
+/filme/#FilmeId/alterar/#Double/preco                                   AlterarFiPrecoR            PATCH
+/filme/#FilmeId/alterar/#Text/tipoFilme                                 AlterarTipoFilmeR          PATCH
+/filme/#FilmeId/alterar/#Text/audioFilme                                AlterarAudioFilmeR         PATCH
+/filme/#FilmeId/alterar/#Text/genero                                    AlterarFiGeneroR           PATCH
+/filme/#FilmeId/alterar/#Int/classificacao                              AlterarFiClassificacaoR    PATCH
 
 
-/teatro                                                TeatroR                  POST
-/teatro/#TeatroId                                      ConsultaTeatroR          GET
-/teatro/consulta/todos                                 TodosTeatrosR            GET
-/teatro/#TeatroId/apagar                               ApagarTeatroR            DELETE
-/teatro/#TeatroId/alterar                              AlterarTeatroR           PUT
-/teatro/#TeatroId/alterar/#Text/nome                   AlterarTeNomeR           PATCH
-/teatro/#TeatroId/alterar/#UTCTime/horario             AlterarTeHorarioR        PATCH
-/teatro/#TeatroId/alterar/#Text/descricao              AlterarTeDescricaoR      PATCH
-/teatro/#TeatroId/alterar/#Int/tel                     AlterarTeTelR            PATCH
-/teatro/#TeatroId/alterar/#Text/endereco               AlterarTeEnderecoR       PATCH
+/teatro                                                                 TeatroR                    POST
+/teatro/#TeatroId                                                       ConsultaTeatroR            GET
+/teatro/consulta/todos                                                  TodosTeatrosR              GET
+/teatro/#TeatroId/apagar                                                ApagarTeatroR              DELETE
+/teatro/#TeatroId/alterar                                               AlterarTeatroR             PUT
+/teatro/#TeatroId/alterar/#Text/nome                                    AlterarTeNomeR             PATCH
+/teatro/#TeatroId/alterar/#UTCTime/horario                              AlterarTeHorarioR          PATCH
+/teatro/#TeatroId/alterar/#Text/descricao                               AlterarTeDescricaoR        PATCH
+/teatro/#TeatroId/alterar/#Int/tel                                      AlterarTeTelR              PATCH
+/teatro/#TeatroId/alterar/#Text/endereco                                AlterarTeEnderecoR         PATCH
 
 
-/peca                                                  PecaR                    POST
-/peca/#PecaId                                          ConsultaPecaR            GET
-/peca/consulta/todos                                   TodasPecasR              GET
-/peca/#PecaId/apagar                                   ApagarPecaR              DELETE
-/peca/#PecaId/alterar                                  AlterarPecaR             PUT
-/peca/#PecaId/alterar/#UTCTime/dtPeca                  AlterarDtPecaR           PATCH
-/peca/#PecaId/alterar/#Text/nome                       AlterarPeNomeR           PATCH
-/peca/#PecaId/alterar/#Text/sinopse                    AlterarPeSinopseR        PATCH
-/peca/#PecaId/alterar/#UTCTime/horario                 AlterarPeHorarioR        PATCH
-/peca/#PecaId/alterar/#Double/preco                    AlterarPePrecoR          PATCH
-/peca/#PecaId/alterar/#Text/tipoPeca                   AlterarPeTipoPecaR       PATCH
-/peca/#PecaId/alterar/#Text/genero                     AlterarPeGeneroR         PATCH
-/peca/#PecaId/alterar/#Int/classificacao               AlterarPeClassificacao   PATCH
+/peca                                                                   PecaR                      POST
+/peca/#PecaId                                                           ConsultaPecaR              GET
+/peca/consulta/todos                                                    TodasPecasR                GET
+/peca/#PecaId/apagar                                                    ApagarPecaR                DELETE
+/peca/#PecaId/alterar                                                   AlterarPecaR               PUT
+/peca/#PecaId/alterar/#UTCTime/dtPeca                                   AlterarDtPecaR             PATCH
+/peca/#PecaId/alterar/#Text/nome                                        AlterarPeNomeR             PATCH
+/peca/#PecaId/alterar/#Text/sinopse                                     AlterarPeSinopseR          PATCH
+/peca/#PecaId/alterar/#UTCTime/horario                                  AlterarPeHorarioR          PATCH
+/peca/#PecaId/alterar/#Double/preco                                     AlterarPePrecoR            PATCH
+/peca/#PecaId/alterar/#Text/tipoPeca                                    AlterarPeTipoPecaR         PATCH
+/peca/#PecaId/alterar/#Text/genero                                      AlterarPeGeneroR           PATCH
+/peca/#PecaId/alterar/#Int/classificacao                                AlterarPeClassificacao     PATCH
 
 
-/localExpo                                             LocalExpoR               POST
-/localExpo/#LocalExpoId                                ConsultaLocalExpoR       GET
-/localExpo/consulta/todos                              TodosLocaisExpoR         GET
-/localExpo/#LocalExpoId/apagar                         ApagarLocalExpoR         DELETE
-/localExpo/#LocalExpoId/alterar                        AlterarLocalExpoR        PUT
-/localExpo/#LocalExpoId/alterar/#Text/nome             AlterarLsNomeR           PATCH
-/localExpo/#LocalExpoId/alterar/#UTCTime/horario       AlterarLsHorarioR        PATCH
-/localExpo/#LocalExpoId/alterar/#Int/tel               AlterarLsTelR            PATCH
-/localExpo/#LocalExpoId/alterar/#Text/endereco         AlterarLsEnderecoR       PATCH
+/localExpo                                                              LocalExpoR                 POST
+/localExpo/#LocalExpoId                                                 ConsultaLocalExpoR         GET
+/localExpo/consulta/todos                                               TodosLocaisExpoR           GET
+/localExpo/#LocalExpoId/apagar                                          ApagarLocalExpoR           DELETE
+/localExpo/#LocalExpoId/alterar                                         AlterarLocalExpoR          PUT
+/localExpo/#LocalExpoId/alterar/#Text/nome                              AlterarLsNomeR             PATCH
+/localExpo/#LocalExpoId/alterar/#UTCTime/horario                        AlterarLsHorarioR          PATCH
+/localExpo/#LocalExpoId/alterar/#Int/tel                                AlterarLsTelR              PATCH
+/localExpo/#LocalExpoId/alterar/#Text/endereco                          AlterarLsEnderecoR         PATCH
 
 
-/exposicao                                             ExposicaoR               POST
-/exposicao/#ExposicaoId                                ConsultaExposicaoR       GET
-/exposicao/consulta/todos                              TodasExposicoesR         GET
-/exposicao/#ExposicaoId/apagar                         ApagarExposicaoR         DELETE
-/exposicao/#ExposicaoId/alterar                        AlterarExposicaoR        PUT
-/exposicao/#ExposicaoId/alterar/#UTCTime/dtExposicao   AlterarDtExposicaoR      PATCH
-/exposicao/#ExposicaoId/alterar/#Text/nome             AlterarExNomeR           PATCH
-/exposicao/#ExposicaoId/Alterar/#UTCTime/horario       AlterarExHorarioR        PATCH
-/exposicao/#ExposicaoId/Alterar/#Text/descricao        AlterarExDescricaoR      PATCH
-/exposicao/#ExposicaoId/Alterar/#Double/preco          AlterarExPrecoR          PATCH
-/exposicao/#ExposicaoId/alterar/#Text/endereco         AlterarExEnderecoR       PATCH
-/exposicao/#ExposicaoId/alterar/#Int/tel               AlterarExTelR            PATCH
-/exposicao/#ExposicaoId/alterar/#Int/classificacao     AlterarExClassificacaoR  PATCH
+/exposicao                                                              ExposicaoR                 POST
+/exposicao/#ExposicaoId                                                 ConsultaExposicaoR         GET
+/exposicao/consulta/todos                                               TodasExposicoesR           GET
+/exposicao/#ExposicaoId/apagar                                          ApagarExposicaoR           DELETE
+/exposicao/#ExposicaoId/alterar                                         AlterarExposicaoR          PUT
+/exposicao/#ExposicaoId/alterar/#UTCTime/dtExposicao                    AlterarDtExposicaoR        PATCH
+/exposicao/#ExposicaoId/alterar/#Text/nome                              AlterarExNomeR             PATCH
+/exposicao/#ExposicaoId/Alterar/#UTCTime/horario                        AlterarExHorarioR          PATCH
+/exposicao/#ExposicaoId/Alterar/#Text/descricao                         AlterarExDescricaoR        PATCH
+/exposicao/#ExposicaoId/Alterar/#Double/preco                           AlterarExPrecoR            PATCH
+/exposicao/#ExposicaoId/alterar/#Text/endereco                          AlterarExEnderecoR         PATCH
+/exposicao/#ExposicaoId/alterar/#Int/tel                                AlterarExTelR              PATCH
+/exposicao/#ExposicaoId/alterar/#Int/classificacao                      AlterarExClassificacaoR    PATCH
 
 
+/eventoEspecial                                                         EventoEspecialR            POST
+/eventoEspecial/#EventoEspecialId                                       ConsultaEventoEspecialR    GET
+/eventoEspecial/consulta/todos                                          TodosEventosEspeciaisR     GET
+/eventoEspecial/#EventoEspecialId/apagar                                ApagarEventoEspecialR      DELETE
+/eventoEspecial/#EventoEspecialId/alterar                               AlterarEventoEspecialR     PUT
+/eventoEspecial/#EventoEspecialId/alterar/#UTCTime/dtEventoEspecial     AlterarDtEventoEspecialR   PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/nmEvento                AlterarNomeEventoR         PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/nmArtista               AlterarNomeArtistaR        PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/nmGrupo                 AlterarNomeGrupoR          PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/nmLocal                 AlterarNomeLocalR          PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#UTCTime/horario              AlterarEeHorarioR          PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/descricao               AlterarEeDescricaoR        PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Double/preco                 AlterarEePrecoR            PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Text/endereco                AlterarEeEnderecoR         PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Int/tel                      AlterarEeTelR              PATCH
+/eventoEspecial/#EventoEspecialId/alterar/#Int/classificacao            AlterarEeClassificacaoR    PATCH
 
-         
+
 
 
 
